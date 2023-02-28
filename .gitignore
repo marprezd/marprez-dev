@@ -1,0 +1,15 @@
+node_modules/
+.cache/
+public
+content/**/*
+src/images/**/*
+.env
+
+### Code editor and IDE###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
