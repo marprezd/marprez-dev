@@ -1,6 +1,32 @@
 import { extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools";
 
 const theme = extendTheme({
+  styles: {
+    global: (props) => ({
+      "html, body": {
+        bg: mode("gray.50", "gray.800")(props),
+        color: mode("gray.800", "whiteAlpha.900")(props),
+      },
+    })
+  },
+  components: {
+    Link: {
+      variants: {
+        primary: ({ colorScheme = "primary"}) => ({
+          color: `${colorScheme}.700`,
+          fontWeight: "500",
+          _hover: {
+            color: `${colorScheme}.800`,
+            textDecoration: "underline",
+          }
+        })
+      },
+      defaultProps: {
+        variant: "primary"
+      }
+    }
+  },
   colors: {
     primary: {
       50: "#f0fcfb",
