@@ -7,7 +7,17 @@ and this project adheres to [Semantic Versioning].
 
 ## [Unreleased]
 
-- The homepage must have a Hero section and display a welcome message together with an SVG file.
+- /
+
+## [0.0.3] - 2023-03-04
+
+### Changed
+
+- Update theme.js file: Add global styles.
+
+### Added
+
+- Add Hero components.
 
 ## [0.0.2] - 2023-03-02
 
@@ -28,5 +38,6 @@ and this project adheres to [Semantic Versioning].
 
 <!-- Versions -->
 [unreleased]: https://github.com/marprezd/marprez-dev/compare/v0.0.2...HEAD
+[0.0.3]: https://github.com/marprezd/marprez-dev/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/marprezd/marprez-dev/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/marprezd/marprez-dev/releases/tag/v0.0.1
