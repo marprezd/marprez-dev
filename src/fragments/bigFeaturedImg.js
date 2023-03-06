@@ -4,7 +4,9 @@ export const featuredImgFragment = graphql`
   fragment BigFeaturedImg on Mdx {
     featuredImg {
       gatsbyImageData(
-        placeholder: BLURRED
+        aspectRatio: 1.9,
+        width: 864,
+        placeholder: BLURRED,
         transformations: ["c_fill", "g_auto:subject", "q_auto"]
       )
     }
