@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog],
 and this project adheres to [Semantic Versioning].
 
+## [0.0.5] - 2023-03-06
+
+### Changed
+
+- Update FeaturedImg fragment: add aspect ratio and width to the post image.
+
+### Added
+
+- Add Intersection Observer API to easily navigate through the table of contents.
+
 ## [0.0.4] - 2023-03-05
 
 ### Changed
@@ -45,6 +55,7 @@ and this project adheres to [Semantic Versioning].
 
 <!-- Versions -->
 [unreleased]: https://github.com/marprezd/marprez-dev/compare/v0.0.2...HEAD
+[0.0.5]: https://github.com/marprezd/marprez-dev/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/marprezd/marprez-dev/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/marprezd/marprez-dev/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/marprezd/marprez-dev/compare/v0.0.1...v0.0.2
