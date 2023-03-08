@@ -8,18 +8,20 @@ import { ThemeToggle } from "./header/ThemeToggle";
 const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
+      position="fixed"
+      zIndex={20}
       as="nav"
       align="center"
       justify="space-between"
       wrap="wrap"
       w="100%"
-      mb={8}
       borderBottom="1px"
       boxShadow="base"
       px={5}
       py={3}
-      _light={{ bg: "primary.800", color: "white", borderColor: "gray.200" }}
-      _dark={{ bg: "gray.900", color: "white", borderColor: "gray.600" }}
+      backdropFilter="saturate(180%) blur(5px)"
+      _light={{ bg: ["primary.800", "primary.800", "rgba(0, 122, 112, .80)"], borderColor: "primary.700" }}
+      _dark={{ bg: ["gray.900", "gray.900", "rgba(0, 0, 0, .80)"], borderColor: "gray.600" }}
       {...props}
     >
       {children}
