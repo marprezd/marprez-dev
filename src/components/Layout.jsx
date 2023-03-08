@@ -16,11 +16,12 @@ export default function Layout({ children }) {
       <Grid
         templateAreas={`"header header" "main main" "footer footer"`}
         gridTemplateRows={"auto auto auto"}
+        gap={10}
       >
         <GridItem area={"header"} as="header">
           <Header />
         </GridItem>
-        <GridItem area={"main"} as="main">
+        <GridItem area={"main"} as="main" my={20}>
           {children}
         </GridItem>
         <GridItem area={"footer"} as="footer">
