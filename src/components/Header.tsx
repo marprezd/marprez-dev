@@ -135,7 +135,7 @@ export default function Header(): JSX.Element {
   return (
     <>
       <header
-        className="pointer-events-none relative z-50 flex flex-col"
+        className="pointer-events-none relative z-50 flex flex-col backdrop-filter backdrop-blur-lg"
         style={{
           height: 'var(--header-height)',
           marginBottom: 'var(--header-mb)',
