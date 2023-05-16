@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Applied Machine Learning: Algorithms",
+    "type": "LinkedIn Learning",
+    "time": "2020-07-10",
+    "content": "In this course—the second and final installment in the series—Derek builds on top of that architecture by exploring a variety of algorithms, from logistic regression to gradient boosting, and showing how to set a structure that guides you through picking the best one for the problem at hand. Each algorithm has its pros and cons, making each one the preferred choice for certain types of problems. Understanding what actually drives each algorithm, as well as their benefits and drawbacks, can give you a significant competitive advantage as a data scientist.",
+    "url": "https://u.pcloud.link/publink/show?code=XZ1wT8VZy9VJJyPkSFyY2XYRlo4uu4b8gCiy",
+    "urlTitle": "File certificate"
+  },
+  {
+    "name": "Applied Machine Learning: Foundations",
+    "type": "LinkedIn Learning",
+    "time": "2020-07-10",
+    "content": "In this course, the first installment in the two-part Applied Machine Learning series, instructor Derek Jedamski digs into the foundations of machine learning, from exploratory data analysis to evaluating a model to ensure it generalizes to unseen examples. Instead of zeroing in on any specific machine learning algorithm, Derek focuses on giving you the tools to efficiently solve nearly any kind of machine learning problem.",
+    "url": "https://u.pcloud.link/publink/show?code=XZYwT8VZFbptg1qwsI87CYT5SB0XuziqMaAy",
+    "urlTitle": "File certificate"
+  },
+  {
+    "name": "Agile Software Development",
+    "type": "LinkedIn Learning",
+    "time": "2020-07-01",
+    "content": "A review of fundamental principles of the agile approach from the perspective of developers, such as principles, roles, and events of the scrum —a hugely popular agile framework. Also, how you can complement your scrum implementation with Kanban.",
+    "url": "https://u.pcloud.link/publink/show?code=XZd2T8VZGMzU93rQgQmxjn360Q2HJkf7DeI7",
+    "urlTitle": "File certificate"
+  },
+  {
+    "name": "Python for Data Science Essential Training Part 2",
+    "type": "LinkedIn Learning",
+    "time": "2020-06-23",
+    "content": "In this course, instructor Lillian Pierson takes you step by step through a practical data science project: building machine learning models that can generate predictions and recommendations and automate routine tasks.",
+    "url": "https://u.pcloud.link/publink/show?code=XZwpn8VZF7liSTdtr7Lcvq8voLE8pHyPft8X",
+    "urlTitle": "File certificate"
+  },
+  {
+    "name": "Python for Data Science Essential Training Part 1",
+    "type": "LinkedIn Learning",
+    "time": "2020-06-23",
+    "content": "In this course, instructor Lillian Pierson takes you step by step through a practical data science project: building machine learning models that can generate predictions and recommendations and automate routine tasks.",
+    "url": "https://u.pcloud.link/publink/show?code=XZSk98VZUQOhDz6A7imFcxFHIvuK7yM7nBJ7",
+    "urlTitle": "File certificate"
+  },
+  {
+    "name": "Python Core and Advanced",
+    "type": "Udemy Learning",
+    "time": "2019-08-13",
+    "content": "Python Core and Advanced, Online Course, Udemy learning, 8 hour 30 min",
+    "url": "https://ude.my/UC-F0SFQH9K",
+    "urlTitle": "File certificate"
+  },
+  {
+    "name": "Python for Absolute Begginers",
+    "type": "Udemy Learning",
+    "time": "2019-08-06",
+    "content": "Python for Absolute Begginers. Online Course, Udemy learning, 3 hour 30 min",
+    "url": "https://ude.my/UC-ZYDS8V9H",
+    "urlTitle": "File certificate"
+  }
+]
