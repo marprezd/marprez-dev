@@ -1,0 +1,32 @@
+{
+  "name": "Mario Pérez",
+  "designation": "Freelance Python Developer",
+  "company": {
+    "name": "Freelance Developer",
+    "url": "https://marprez-dev.vercel.app/"
+  },
+  "bio": "I am a self-taught software developer interested in building apps for different devices, machine learning, and artificial intelligence to solve real-world problems. I like to share my experience and knowledge in software development. I hope my posts are meaningful to you.",
+  "location": "Barranquilla, Colombia",
+  "twitterTweets": 104,
+  "twitterFollowers": 38,
+  "twitterFollowing": 82,
+  "socialLinks": [
+    {
+      "name": "twitter",
+      "url": "https://twitter.com/marprezd"
+    },
+    {
+      "name": "stackoverflow",
+      "url": "https://stackoverflow.com.users/11650008/marprezd"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/marprezd"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://linkedin.com/in/maprezd"
+    }
+  ],
+  "resume": "files/marprezd-cv.pdf"
+}
