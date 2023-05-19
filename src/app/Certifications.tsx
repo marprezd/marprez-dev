@@ -34,18 +34,18 @@ export default function Certifications({ certifications }: any): JSX.Element {
           {certifications.length > 2 && (
             <div className="flex justify-center">
               <button
-                className="group inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-4 py-3 text-sm font-semibold uppercase text-primary-10 transition-all hover:bg-primary-90 focus:outline-none focus:ring-2 focus:ring-primary-40 focus:ring-offset-2 dark:text-primary-90 dark:hover:bg-primary-30 dark:focus:ring-offset-primary-20"
+                className="group inline-flex items-center justify-center gap-x-2 rounded-full border border-primary-40 px-4 py-3 text-sm font-semibold text-primary-40 transition-all hover:bg-primary-40 hover:text-white focus:outline-none focus:ring-2 focus:ring-primary-40 focus:ring-offset-2 dark:border-primary-80 dark:text-primary-80 dark:hover:bg-primary-80 dark:hover:text-primary-20 dark:focus:ring-offset-primary-20"
                 onClick={() => setIsExpanded(!isExpanded)}
               >
                 {isExpanded ? (
                   <>
                     Show less
-                    <ChevronUpIcon className="ml-3 h-auto w-[10px] stroke-primary-10 group-hover:stroke-primary-10 dark:stroke-primary-90 dark:group-hover:stroke-primary-90" />
+                    <ChevronUpIcon className="ml-3 h-auto w-[10px] stroke-primary-50 group-hover:stroke-primary-40 dark:stroke-primary-90 dark:group-hover:stroke-primary-80" />
                   </>
                 ) : (
                   <>
                     Show more
-                    <ChevronDownIcon className="ml-3 h-auto w-[10px] stroke-primary-10 group-hover:stroke-primary-10 dark:stroke-primary-90 dark:group-hover:stroke-primary-90" />
+                    <ChevronDownIcon className="ml-3 h-auto w-[10px] stroke-primary-50 group-hover:stroke-primary-40 dark:stroke-primary-90 dark:group-hover:stroke-primary-80" />
                   </>
                 )}
               </button>

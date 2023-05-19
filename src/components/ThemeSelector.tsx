@@ -35,8 +35,8 @@ export default function ThemeSelector(): JSX.Element {
       className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-gray-800/5 ring-1 ring-gray-900/5 backdrop-blur transition dark:bg-gray-800/90 dark:ring-white/10 dark:hover:ring-white/20"
       onClick={toggleTheme}
     >
-      <SunIcon className="h-6 w-6 fill-gray-100 stroke-gray-500 transition group-hover:fill-gray-200 group-hover:stroke-gray-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-primary-50 [@media(prefers-color-scheme:dark)]:stroke-primary-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-primary-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-primary-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-gray-700 stroke-gray-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-gray-400 [@media_not_(prefers-color-scheme:dark)]:fill-primary-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-primary-500" />
+      <SunIcon className="h-6 w-6 fill-primary-40 stroke-primary-40 transition group-hover:fill-primary-35 group-hover:stroke-primary-35 dark:hidden [@media(prefers-color-scheme:dark)]:fill-primary-80 [@media(prefers-color-scheme:dark)]:stroke-primary-80 [@media(prefers-color-scheme:dark)]:group-hover:fill-primary-70 [@media(prefers-color-scheme:dark)]:group-hover:stroke-primary-70" />
+      <MoonIcon className="hidden h-6 w-6 fill-primary-40 stroke-primary-40 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-primary-70 [@media_not_(prefers-color-scheme:dark)]:fill-primary-35/10 [@media_not_(prefers-color-scheme:dark)]:stroke-primary-80" />
     </button>
   )
 }

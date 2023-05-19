@@ -79,7 +79,7 @@ function MobileNavItem({
       <Popover.Button
         as={Link}
         href={href}
-        className="-mt-px inline-flex w-full items-center gap-x-3.5 px-4 py-2 text-sm font-medium text-primary-700 first:mt-0 hover:text-primary-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-primary-600 dark:text-primary-50 dark:hover:text-primary-200"
+        className="-mt-px inline-flex w-full items-center gap-x-3.5 px-4 py-2 text-sm font-medium text-primary-40 first:mt-0 hover:text-primary-35 focus:z-10 focus:outline-none focus:ring-2 focus:ring-primary-35 dark:text-primary-80 dark:hover:text-primary-70"
       >
         {children}
       </Popover.Button>
