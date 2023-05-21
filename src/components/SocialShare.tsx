@@ -1,17 +1,13 @@
 import { server } from "config";
 import { Article, Tag } from "contentlayer/generated";
 import {
-  FacebookIcon,
   FacebookShareButton,
-  LinkedinIcon,
   LinkedinShareButton,
-  RedditIcon,
   RedditShareButton,
-  TwitterIcon,
   TwitterShareButton,
-  WhatsappIcon,
   WhatsappShareButton,
 } from "next-share";
+import { IconBrandFacebook, IconBrandTwitter, IconBrandReddit, IconBrandLinkedin, IconBrandWhatsapp } from "@tabler/icons-react";
 
 export default function SocialShare({
   article,
@@ -28,7 +24,7 @@ export default function SocialShare({
           hashtag={(article.tags as Tag[])[0].title}
           blankTarget={true}
         >
-          <FacebookIcon size={32} round={true} />
+          <IconBrandFacebook size={28} />
         </FacebookShareButton>
       </div>
       <div>
@@ -40,22 +36,22 @@ export default function SocialShare({
           ]}
           blankTarget={true}
         >
-          <TwitterIcon size={32} round={true} />
+          <IconBrandTwitter size={28} />
         </TwitterShareButton>
       </div>
       <div>
         <RedditShareButton url={url} title={article.title} blankTarget={true}>
-          <RedditIcon size={32} round={true} />
+          <IconBrandReddit size={28} />
         </RedditShareButton>
       </div>
       <div>
         <LinkedinShareButton url={url} blankTarget={true}>
-          <LinkedinIcon size={32} round={true} />
+          <IconBrandLinkedin size={28} />
         </LinkedinShareButton>
       </div>
       <div>
         <WhatsappShareButton url={url} title={article.title} blankTarget={true}>
-          <WhatsappIcon size={32} round={true} />
+          <IconBrandWhatsapp size={28} />
         </WhatsappShareButton>
       </div>
     </div>
