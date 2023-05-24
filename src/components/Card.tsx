@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import Link from 'next/link'
-import { ChevronRightIcon } from './Icons'
 import React from 'react'
 
 export function Card({
@@ -13,32 +12,24 @@ export function Card({
   children: React.ReactNode
 }): JSX.Element {
   return (
-    <Component
-      className={clsx(
-        className,
-        'group relative block overflow-hidden rounded-lg border border-gray-300 bg-white p-7 hover:shadow-md dark:border-gray-700 dark:bg-gray-800 sm:p-8 md:p-9 lg:p-10'
-      )}
-    >
+    <Component className={clsx(className, 'rounded-md bg-white p-4 shadow-md dark:bg-gray-950')}>
       {children}
     </Component>
   )
 }
 
 Card.Header = function CardHeader({
-  as: Component = 'div',
+  as: Component = 'header',
   children,
 }: {
   as?: React.ElementType
   children: React.ReactNode
 }): JSX.Element {
-  return <Component className="sm:flex sm:justify-between sm:gap-4">{children}</Component>
-}
-
-Card.Badge = function CardBadge({ children }: { children: React.ReactNode }): JSX.Element {
   return (
-    <span className="absolute right-0 top-0 inline-flex items-center gap-1 rounded-bl-lg rounded-br-none rounded-tl-none rounded-tr-none bg-secondary-40 px-2 py-1 text-xs font-medium text-white dark:bg-secondary-80 dark:text-secondary-20">
-      {children}
-    </span>
+    <Component className="flex text-xs font-medium uppercase">
+      <span className="mr-2 h-6 w-1 rounded-full bg-secondary-40 dark:bg-secondary-80" />
+      <p>{children}</p>
+    </Component>
   )
 }
 
@@ -49,27 +40,60 @@ Card.Media = function CardMedia({
   as?: React.ElementType
   children: React.ReactNode
 }): JSX.Element {
-  return <Component className="hidden sm:block sm:shrink-0">{children}</Component>
+  return <Component className="mt-2 w-full">{children}</Component>
 }
 
-Card.Body = function CardBody({
+Card.Title = function CardTitle({
+  as: Component = 'h3',
+  children,
+}: {
+  as?: React.ElementType
+  children: React.ReactNode
+}): JSX.Element {
+  return (
+    <Component className="mt-2 line-clamp-3 text-2xl font-bold tracking-tight">
+      {children}
+    </Component>
+  )
+}
+
+Card.AfterTitle = function AfterTitle({
+  as: Component = 'span',
+  children,
+}: {
+  as?: React.ElementType
+  children: React.ReactNode
+}): JSX.Element {
+  return (
+    <Component className="inline-flex items-center text-xs text-gray-600 dark:text-gray-400">
+      {children}
+    </Component>
+  )
+}
+
+Card.Description = function CardDescription({
   as: Component = 'div',
   children,
 }: {
   as?: React.ElementType
   children: React.ReactNode
 }): JSX.Element {
-  return <Component className="mt-4">{children}</Component>
+  return (
+    <Component className="mt-3">
+      <h4 className="text-xl font-bold">Summary</h4>
+      <p className="mb-5 line-clamp-4 text-sm dark:text-gray-200">{children}</p>
+    </Component>
+  )
 }
 
 Card.Footer = function CardFooter({
-  as: Component = 'dl',
+  as: Component = 'footer',
   children,
 }: {
   as?: React.ElementType
   children: React.ReactNode
 }): JSX.Element {
-  return <Component className="mt-6 flex gap-4 sm:gap-6">{children}</Component>
+  return <Component className="flex justify-between">{children}</Component>
 }
 
 Card.Link = function CardLink({
@@ -81,79 +105,41 @@ Card.Link = function CardLink({
 }): JSX.Element {
   return (
     <>
-      <Link href={''} {...props}>
-        <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
-        <span className="relative z-10">{children}</span>
+      <Link
+        className="group inline-flex items-center rounded-full bg-primary-50 px-3 py-2 text-xs font-medium uppercase text-white hover:bg-primary-40 focus:outline-none focus:ring-4 focus:ring-primary-90 dark:bg-primary-80 dark:text-primary-20 dark:hover:bg-primary-70 dark:focus:ring-primary-50"
+        href={''}
+        {...props}
+      >
+        {children}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="icon icon-tabler icon-tabler-chevron-right ml-1 h-4 w-4 delay-100 duration-200 ease-in-out group-hover:translate-x-2"
+          width={24}
+          height={24}
+          viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M0 0h24v24H0z" stroke="none" />
+          <path d="M9 6l6 6-6 6" />
+        </svg>
       </Link>
     </>
   )
 }
 
-Card.Title = function CardTitle({
-  // as: Component = 'h3',
-  href,
+Card.ExtraInfo = function CardExtraInfo({
+  as: Component = 'span',
   children,
-}: {
-  // as?: React.ElementType
-  href?: string
-  children: React.ReactNode
-}): JSX.Element {
-  return (
-    <div>
-      <h3 className="text-lg font-bold dark:text-gray-50 sm:text-xl">
-        {href ? <Card.Link href={href}>{children}</Card.Link> : children}
-      </h3>
-    </div>
-  )
-}
-
-Card.Description = function CardDescription({
-  children,
-}: {
-  children: React.ReactNode
-}): JSX.Element {
-  return <p className="max-w-[40ch] text-sm text-gray-700 dark:text-gray-200">{children}</p>
-}
-
-Card.Cta = function CardCta({ children }: { children: React.ReactNode }): JSX.Element {
-  return (
-    <div
-      aria-hidden="true"
-      className="relative z-10 mt-4 flex items-center text-sm font-medium text-primary-40 dark:text-primary-80"
-    >
-      {children}
-      <ChevronRightIcon className="ml-1 h-4 w-4 stroke-current" />
-    </div>
-  )
-}
-
-Card.Eyebrow = function CardEyebrow({
-  as: Component = 'p',
-  decorate = false,
-  className,
-  children,
-  ...props
 }: {
   as?: React.ElementType
-  decorate?: boolean
-  className?: string
   children: React.ReactNode
-  [key: string]: any
 }): JSX.Element {
   return (
-    <Component
-      className={clsx(
-        className,
-        'relative z-10 order-first mb-3 flex items-center text-sm text-gray-400 dark:text-gray-500',
-        decorate && 'pl-3.5'
-      )}
-      {...props}
-    >
-      {decorate && (
-        <span className="absolute inset-y-0 left-0 flex items-center" aria-hidden="true">
-          <span className="h-4 w-0.5 rounded-full bg-gray-200 dark:bg-gray-500" />
-        </span>
-      )}
+    <Component className="inline-flex items-center text-xs text-gray-600 dark:text-gray-400">
       {children}
     </Component>
   )

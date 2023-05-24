@@ -14,7 +14,7 @@ export default function RelatedArticles({
             Related Articles
           </h2>
 
-          <article className="grid grid-cols-1 gap-4">
+          <article className="grid grid-cols-1 gap-2 md:grid-cols-2">
             {articles.map((article: any) => (
               <ArticleCard key={article.slug} article={article} />
             ))}

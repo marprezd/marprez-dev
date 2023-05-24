@@ -17,8 +17,8 @@ export default function Articles({ articles }: { articles: Article[] }) {
               There are some recent articles in different categories that may be of interest to you.
             </p>
           </div>
-          <article className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            {articles.slice(0, 4).map((article: any) => (
+          <article className="my-2 grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {articles.slice(0, 3).map((article: any) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
           </article>
