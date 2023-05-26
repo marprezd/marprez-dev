@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Machine Learning for Decision Sciences with Case Studies in Python",
+    "url": "https://www.routledge.com/Machine-Learning-for-Decision-Sciences-with-Case-Studies-in-Python/Sumathi-Rajappa-Kumar-Paneerselvam/p/book/9781003258803",
+    "description": "This book provides a detailed description of machine learning algorithms in data analytics, data science life cycle, Python for machine learning, linear regression, logistic regression, and so forth.",
+    "category": "Python",
+    "format": "ebook, hardback"
+  },
+  {
+    "title": "Building Data Science Applications with FastAPI",
+    "url": "https://www.oreilly.com/library/view/building-data-science/9781801079211/",
+    "description": "Get well-versed with FastAPI features and best practices for testing, monitoring, and deployment to run high-quality and robust data science applications.",
+    "category": "Python",
+    "format": "ebook, online"
+  },
+  {
+    "title": "Intro to Python for Computer Science and Data Science",
+    "url": "https://www.pearson.com/en-us/subject-catalog/p/intro-to-python-for-computer-science-and-data-science-learning-to-program-with-ai-big-data-and-the-cloud/P200000003444/9780135404676",
+    "description": "This book aligns with the latest ACM/IEEE CS-and-related computing curriculum initiatives and with the Data Science Undergraduate Curriculum Proposal sponsored by the National Science Foundation",
+    "category": "Python",
+    "format": "ebook, paperback"
+  },
+  {
+    "title": "Python Crash Course. A hands-on, project-based introduction to programming",
+    "url": "https://nostarch.com/python-crash-course-3rd-edition",
+    "description": "Python Crash Course is the world's best-storeing guide to the Python programming language. This fast-paced, thorough introduction will have you writing programs, solving problems, and developing functioning applications in no time.",
+    "category": "Python",
+    "format": "ebook, paperback"
+  }
+]
